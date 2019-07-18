@@ -1,0 +1,9 @@
+image: archlinux
+packages:
+  - go
+sources:
+  - https://github.com/delthas/go-access.git
+tasks:
+  - build: |
+      cd go-access
+      go test -v .
